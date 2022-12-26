@@ -9,33 +9,35 @@
 
 </head>
 <body>
-<div class="sidebar">
-  <div class="icon">
-    <p><a href="#"><i class='bx bx-chevron-down'></i>Favorites</a></p>
-  </div>
-  <div class="menu">
-    <ul class="main">
-      <a href="#"><li>Inbox</li></a>
-      <a routerLink="/danhsach"><li class="active">Sent Items</li></a>
-    </ul>
-  </div>
-  <div class="icon">
-    <p><a href="#"><i class='bx bx-chevron-down'></i>John</a></p>
-  </div>
-  <div class="menu">
-    <ul class="main">
-      <a href="#"><li>Inbox</li></a>
-      <a href="#"><li>Drafts</li></a>
-      <a href="#"><li>Deleted Items</li></a>
-      <a href="#"><li>Sent Items</li></a>
-      <a href="#"><li>Outbox</li></a>
-    </ul>
+<div class="container">
+  <div class="row">
+    <div class="sidebar">
+      <div class="icon">
+        <p><a href="#"><i class='bx bx-chevron-down'></i>Favorites</a></p>
+      </div>
+      <div class="menu">
+        <ul class="main">
+          <a href="#"><li>Inbox</li></a>
+          <a routerLink="/favorites"><li class="active">Sent Items</li></a>
+        </ul>
+      </div>
+      <div class="icon">
+        <p><a href="#"><i class='bx bx-chevron-down'></i>John</a></p>
+      </div>
+      <div class="menu">
+        <ul class="main">
+          <a href="#"><li>Inbox</li></a>
+          <a href="#"><li>Drafts</li></a>
+          <a href="#"><li>Deleted Items</li></a>
+          <a href="#"><li>Sent Items</li></a>
+          <a href="#"><li>Outbox</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="all">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
-<div class="all">
-  <router-outlet></router-outlet>
-
-</div>
-
 </body>
 </html>
